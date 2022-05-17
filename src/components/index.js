@@ -1,0 +1,1 @@
+export { default as NavBox } from 'ui/nav'
