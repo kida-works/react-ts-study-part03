@@ -1,10 +1,15 @@
 import { Link  } from 'react-router-dom';
+import styled from 'styled-components';
 
 const NavBox = () => {
   const navLists = [
     {
-      title:"item01",
+      title:"Home",
       to:"/"
+    },
+    {
+      title:"item01",
+      to:"/item01"
     },
     {
       title:"item02",
@@ -28,12 +33,20 @@ const NavBox = () => {
   return(
     <>
       <nav>
-        <ul>
+        <InnerNav>
           {lists}
-        </ul>
+        </InnerNav>
       </nav>
     </>
   )
 }
+
+const InnerNav = styled.ul`
+display; flex;
+  li{
+    padding; 8px 16px;
+  }
+
+`
 
 export default NavBox
