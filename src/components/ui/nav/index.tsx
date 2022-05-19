@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const NavBox = () => {
   const navLists = [
     {
-      title:"Home",
+      title:"styled-components",
       to:"/"
     },
     {

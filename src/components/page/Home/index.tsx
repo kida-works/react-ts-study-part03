@@ -11,7 +11,9 @@ const Home = () => {
       </LogoWrap>
     </Header>
     <main>
-      <h1>Home</h1>
+      <h1>styled-componentsについて</h1>
+      <p>参考URL</p>
+      <a href="https://www.codegrid.net/articles/2020-styled-components-1/#toc-4">https://www.codegrid.net/articles/2020-styled-components-1/#toc-4</a>
     </main>
     </>
   )
