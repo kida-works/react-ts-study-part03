@@ -44,8 +44,9 @@ const NavBox = () => {
 const InnerNav = styled.ul({
   display: "flex",
   "li":{
-    padding: "1.6rem",
     "a":{
+      display: "inline-block",
+      padding: "0.8rem 1.6rem",
       color: "#000",
       transition:"0.6s",
       ":hover":{

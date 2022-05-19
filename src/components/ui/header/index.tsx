@@ -18,7 +18,11 @@ const Header: FunctionComponent<Props> = ({children}) => {
 }
 
 const HeaderWrap = styled.header({
-  padding: "2.4rem 1.6rem",
+  padding: "0.8rem 1.6rem",
+  display: "flex",
+  justifyContent: "space-between",
+  boxShadow: "0 3px 5px 5px rgba( 0, 0 ,0 , 0.3 )",
+
 })
  
 

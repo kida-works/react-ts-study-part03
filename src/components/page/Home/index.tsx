@@ -1,12 +1,14 @@
 import Header from "../../ui/header";
+import Logo from './../../../logo.svg';
+import styled from "styled-components";
 
 const Home = () => {
   return(
     <>
     <Header>
-      <figure>
-        <img src="../../logo.svg" alt="" />
-      </figure>
+      <LogoWrap>
+        <img src={Logo} alt="logo" />
+      </LogoWrap>
     </Header>
     <main>
       <h1>Home</h1>
@@ -14,5 +16,13 @@ const Home = () => {
     </>
   )
 }
+
+const LogoWrap = styled.figure({
+  width: "50px",
+  heigth: "50px",
+  "img": {
+    width: "100%",
+  }
+})
 
 export default Home
