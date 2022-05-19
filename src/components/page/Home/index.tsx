@@ -8,6 +8,9 @@ const Home = () => {
         <img src="../../logo.svg" alt="" />
       </figure>
     </Header>
+    <main>
+      <h1>Home</h1>
+    </main>
     </>
   )
 }

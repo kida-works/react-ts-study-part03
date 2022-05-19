@@ -23,7 +23,7 @@ const NavBox = () => {
 
   const lists = navLists.map((list)=>{
     return(
-      <li>
+      <li key={list.title}>
         <Link to={list.to}>{list.title}</Link>
       </li>
     )
@@ -41,12 +41,18 @@ const NavBox = () => {
   )
 }
 
-const InnerNav = styled.ul`
-display; flex;
-  li{
-    padding; 8px 16px;
+const InnerNav = styled.ul({
+  display: "flex",
+  "li":{
+    padding: "1.6rem",
+    "a":{
+      color: "#000",
+      transition:"0.6s",
+      ":hover":{
+        color:"tomato",
+      }
+    }
   }
-
-`
+})
 
 export default NavBox

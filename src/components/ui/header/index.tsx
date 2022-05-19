@@ -17,8 +17,11 @@ const Header: FunctionComponent<Props> = ({children}) => {
   )
 }
 
-const HeaderWrap = styled.header`
-  padding: 2.4rem 16rem;
-`;
+const HeaderWrap = styled.header({
+  padding: "2.4rem 1.6rem",
+})
+ 
+
+
 
 export default Header
